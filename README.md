@@ -36,3 +36,11 @@ jobs:
 
       - name: Build
         run: cmake --build build
+```
+
+## Inputs
+
+|Name	|Required|	Description|
+|-----|--------|-------------|
+|qt-version|	Yes|	Qt version to install (e.g., 6.6.1)|
+|modules|	No|	Qt modules to install (space-separated)|
