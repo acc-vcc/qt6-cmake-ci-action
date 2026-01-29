@@ -1,0 +1,23 @@
+name: "Qt6 CMake CI Action"
+description: "Install Qt6 using aqtinstall and build CMake-based Qt6 projects on Linux, Windows, and macOS."
+author: "acc-cc"
+
+inputs:
+  qt-version:
+    description: "Qt version to install (e.g., 6.6.1)"
+    required: true
+  modules:
+    description: "Qt modules to install (space-separated)"
+    required: false
+    default: "qtbase"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.qt-version }}
+    - ${{ inputs.modules }}
+
+branding:
+  icon: "package"
+  color: "blue"
