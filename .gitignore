@@ -1,1 +1,13 @@
-*.log
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Docker local artifacts
+*.tar
+*.img
