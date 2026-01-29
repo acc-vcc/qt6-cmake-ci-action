@@ -44,3 +44,14 @@ jobs:
 |-----|--------|-------------|
 |qt-version|	Yes|	Qt version to install (e.g., 6.6.1)|
 |modules|	No|	Qt modules to install (space-separated)|
+
+---
+
+## Requirements
+- GitHub-hosted runners (Ubuntu, Windows, macOS)
+- CMake and Ninja (installed automatically on Ubuntu)
+
+---
+
+## License
+MIT License
