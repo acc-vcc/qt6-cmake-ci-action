@@ -8,7 +8,11 @@ echo "Installing Qt ${QT_VERSION}..."
 echo "Modules: ${MODULES}"
 
 # Install Qt using aqtinstall
-python3 -m aqt install-qt linux desktop "${QT_VERSION}" ${MODULES} -O /opt/Qt
+if [ -n "${MODULES}" ]; then
+    python3 -m aqt install-qt linux desktop "${QT_VERSION}" --modules ${MODULES} -O /opt/Qt
+else
+    python3 -m aqt install-qt linux desktop "${QT_VERSION}" -O /opt/Qt
+fi
 
 echo "Qt installed at /opt/Qt"
 
