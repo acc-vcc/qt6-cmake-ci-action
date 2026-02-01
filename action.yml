@@ -1,5 +1,5 @@
 name: "Qt6 CMake CI Action"
-description: "Install Qt6 using aqtinstall and build CMake-based Qt6 projects on Linux, Windows, and macOS."
+description: "Install Qt6 using aqtinstall and build CMake-based Qt6 projects inside an Ubuntu-based Docker container. Works on all GitHub-hosted runners, but always builds Linux Qt."
 author: "acc-cc"
 
 inputs:
@@ -10,6 +10,10 @@ inputs:
     description: "Qt modules to install (space-separated)"
     required: false
     default: ""
+  source-dir:
+    description: "Directory containing CMakeLists.txt" 
+    required: false
+    default: "."
 
 runs:
   using: "docker"
@@ -17,6 +21,7 @@ runs:
   args:
     - ${{ inputs.qt-version }}
     - ${{ inputs.modules }}
+    - ${{ inputs.source-dir }}
 
 branding:
   icon: "package"

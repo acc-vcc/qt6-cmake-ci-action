@@ -8,7 +8,9 @@ RUN apt update && apt install -y \
     ninja-build \
     git \
     curl \
-    unzip
+    unzip \
+    libglib2.0-0 \
+    libglib2.0-dev
 
 # Install aqtinstall
 RUN pip3 install aqtinstall
