@@ -14,7 +14,7 @@ Just specify the Qt version, and your CI pipeline is ready to build.
 This Action installs Qt6 and builds your project automatically inside the container.
 
 ```yaml
-- uses: acc-cc/qt6-cmake-ci-action@v1
+- uses: acc-vcc/qt6-cmake-ci-action@v1
   with:
     qt-version: "6.6.1"
 ```
@@ -50,6 +50,8 @@ Setting up Qt6 in CI is surprisingly tedious:
 - Optional add‑on modules  
 - Fast, cache‑friendly setup  
 
+This Action provides a fully reproducible Qt6 build environment, eliminating platform differences and making CI pipelines stable and predictable.
+
 ---
 
 ## 🛠 Usage
@@ -67,7 +69,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Qt6
-        uses: acc-cc/qt6-cmake-ci-action@v1
+        uses: acc-vcc/qt6-cmake-ci-action@v1
         with:
           qt-version: "6.6.1"
           modules: ""  # Qt6 core/GUI/QML require no modules
@@ -89,12 +91,20 @@ jobs:
 ## 📄 Requirements
 - GitHub-hosted runners (Ubuntu, Windows, macOS)
 - CMake and Ninja (installed automatically on Ubuntu container)
+- Docker is required (available by default on GitHub-hosted runners)
 
 ---
 
 ## 📚 More Qt Tools
 
 👉 https://acc-vcc.itch.io
+
+---
+
+## Additional Resources
+
+- Blog post on dev.to explaining the design and motivation behind this Action:  
+  https://dev.to/accvcc/simplifying-qt6-ci-on-github-actions-with-a-docker-based-cmake-build-environment-33bp
 
 ---
 
