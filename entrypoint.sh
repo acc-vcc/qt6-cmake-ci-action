@@ -44,6 +44,3 @@ fi
 
 # Build
 cmake --build build
-
-# Copy artifacts back to host workspace
-cp -r build "/github/workspace/build"
