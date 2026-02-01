@@ -9,7 +9,7 @@ inputs:
   modules:
     description: "Qt modules to install (space-separated)"
     required: false
-    default: "qtbase"
+    default: ""
 
 runs:
   using: "docker"
