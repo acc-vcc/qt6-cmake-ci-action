@@ -8,6 +8,15 @@ Just specify the Qt version, and your CI pipeline is ready to build.
 
 ---
 
+# Extended Documentation
+
+If you're looking for more Qt tools, templates, and CI utilities,
+you can find the full collection here:
+
+🔗 https://acc-vcc.itch.io
+
+---
+
 ## 🚀 Why use this Action?
 
 Setting up Qt6 in CI is surprisingly tedious:
@@ -79,12 +88,11 @@ jobs:
 
 ---
 
-## Extended Documentation
+## 📚 More Qt Tools
+If you are looking for additional Qt development templates, CI tools,
+or ready‑to‑use project starters, more resources are available here:
 
-Looking for more Qt tools, templates, and CI utilities?
-
-👉 See the **Extended README** for additional resources and advanced usage:
-[Extended README](README_FULL.md)
+👉 https://acc-vcc.itch.io
 
 ---
 
