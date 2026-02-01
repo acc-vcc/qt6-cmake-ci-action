@@ -8,6 +8,16 @@ Just specify the Qt version, and your CI pipeline is ready to build.
 
 ---
 
+## Quick Start
+
+```yaml
+- uses: acc-cc/qt6-cmake-ci-action@v1
+  with:
+    qt-version: "6.6.1"
+```
+
+---
+
 # Extended Documentation
 
 If you're looking for more Qt tools, templates, and CI utilities,
