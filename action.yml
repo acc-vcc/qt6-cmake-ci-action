@@ -1,5 +1,5 @@
 name: "Qt6 CMake CI Action"
-description: "Install Qt6 using aqtinstall and build CMake-based Qt6 projects inside an Ubuntu-based Docker container. Works on all GitHub-hosted runners, but always builds Linux Qt."
+description: "Install Qt6 with aqtinstall and build CMake-based Qt6 projects in an Ubuntu Docker container."
 author: "acc-cc"
 
 inputs:
