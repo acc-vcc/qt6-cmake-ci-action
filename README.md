@@ -2,7 +2,8 @@
 
 # Qt6 CMake CI Action
 
-A GitHub Action that installs Qt6 using aqtinstall and builds CMake-based Qt6 projects on Linux, Windows, and macOS.
+A GitHub Action that installs Qt6 using aqtinstall and builds CMake-based Qt6 projects **inside an Ubuntu-based container**.  
+Works on all GitHub-hosted runners (Ubuntu, Windows, macOS), but Qt installation and builds run on Linux.
 
 ---
 
@@ -18,10 +19,10 @@ A GitHub Action that installs Qt6 using aqtinstall and builds CMake-based Qt6 pr
 
 ## 🔧 Inputs
 
-|Name	|Required|	Description|
+|Name|Required|Description|
 |-----|--------|-------------|
-|qt-version|	Yes|	Qt version to install (e.g., 6.6.1)|
-|modules| No| Space‑separated Qt6 add‑on modules (Qt6 core/GUI/QML require no modules)|
+|qt-version|Yes|Qt version to install (e.g., 6.6.1)|
+|modules|No|Space‑separated Qt6 add‑on modules (Qt6 core/GUI/QML require no modules)|
 
 ---
 
@@ -29,7 +30,7 @@ A GitHub Action that installs Qt6 using aqtinstall and builds CMake-based Qt6 pr
 
 Looking for more Qt tools, templates, and CI utilities?
 
-👉 See the **Extended README** for additional resources and advanced usage:
+👉 See the **Extended README** for additional resources and advanced usage:  
 [Extended README](README_FULL.md)
 
 ---
